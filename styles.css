@@ -1,0 +1,32 @@
+.boxes{
+    border:  3px solid maroon;
+    border-radius: 12px;
+    background-color: rgb(223, 217, 217);
+
+}
+
+.mainheading{
+    text-align: center;
+}
+
+.code{
+    font-size: 1.3em;
+    width: 90%;
+}
+
+
+#flexContainer{
+    display: flex;
+    flex-direction:row ;
+
+}
+
+.flexItmes{
+    background-color: aqua;
+    margin: 4px 4px;
+    border: 2pxc solid black;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+}

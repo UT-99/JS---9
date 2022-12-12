@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOCUMENT OBJECT MODEL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <h1 class="mainheading">JS - Handson Document Object Model</h1> 
+
+    <p id="text">This the element with id Text.</p>
+
+    <div class="boxes">
+        <h3>Ques 1. Write the code to access element which is having id as "text"</h3>
+        <pre class="code">
+            let fetchValue = document.getElementById('text');
+            console.log(fetchValue);
+        </pre>
+    </div>
+
+
+    <p class="box">This the element with class box.</p>
+
+
+    <h1 id="changeContentForHeading">HELLO</h1>
+
+    <div id="flexContainer">
+        <div class="flexItmes">Flex Box 1 </div>
+        <div class="flexItmes">Flex Box 2 </div>
+        <div class="flexItmes">Flex Box 3 </div>
+    </div>
+
+    <button id="buttonforFlexDirection"  onclick="changeFlexDirection()">Click here for above boxes Change Direction</button>
+    
+
+
+   
+    <h2 >HELLO </h2>
+
+    <h3 id ='chnageInnerText'>HELLO </h3>
+    <button id="replace"  onclick = 'changetheinnerContent()'>click here to replce the text.</button>
+
+
+    <h3>Timer Clock below </h3>
+
+    <span id="hr">HR : </span> <span id = "min">MIN : </span> <span id="sec">SEC : </span>
+
+    <h4>Select year : </h4>
+    <select name="selctyear" id="selectyearId" onfocus="onselectfuinction()">
+        <option value="default"  onselect="onselectfuinction()"></option>
+        <option value="2020-2021" onselect="onselectfuinction()">2020-2021</option>
+        <option value="2021-2022" onselect="onselectfuinction()">2021-2022</option>
+    </select>
+
+    <p id="selectedYearValue">Selected Year is : </p>
+
+    <script src="main.js"></script>
+</body>
+</html>
