@@ -9,23 +9,77 @@
 </head>
 <body>
 
-    <h1 class="mainheading">JS - Handson Document Object Model</h1> 
+    <h1 class="mainheading">JS - Handson Document Object Model (DOM) </h1> 
 
-    <p id="text">This the element with id Text.</p>
+
 
     <div class="boxes">
+        <h2>Question 1.  Write the code to access element which is having id as "text"</h2>
+
+        <p id="text">This the element with id Text.</p>    
         <h3>Ques 1. Write the code to access element which is having id as "text"</h3>
         <pre class="code">
             let fetchValue = document.getElementById('text');
             console.log(fetchValue);
         </pre>
+   
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+
+    <div class="boxes">
+        <h2>Question 2.  Write the code to access element which is having tag as "h1"</h2>
+        <h1 id="h1">HELLO</h1>
+        <pre class="code">
+            let fetchValueByTagName = document.getElementsByTagName('h1')
+            console.log(fetchValueByTagName);
+        </pre>
     </div>
 
 
-    <p class="box">This the element with class box.</p>
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+        <h2>Question 3 . Write the code to access element which is having class as "box"</h2>
+        <br>
+        <p class="box">This the element with class box.</p>
+
+        <pre class="code">
+            let fetchValueByClassName = document.getElementsByClassName('box');
+            console.log(fetchValueByClassName);
 
 
-    <h1 id="changeContentForHeading">HELLO</h1>
+        </pre>
+    </div>
+
+    <br>
+    <hr>
+    <br>
+
+    <div class="boxes">
+
+        <h2>Question 4. Change the heading from "Hello" to "Hello World" using DOM functions</h2>
+        
+        <h2 id="changeContentForHeading" >HELLO </h2>
+
+        <pre class="code">
+            let changeHeadingValue = document.getElementById('changeContentForHeading').innerText ="HELLO WORLD";
+            console.log(changeHeadingValue)
+
+        </pre>
+
+
+    </div>
+
+    
+
+
+    
 
     <div id="flexContainer">
         <div class="flexItmes">Flex Box 1 </div>
@@ -49,10 +103,10 @@
     <span id="hr">HR : </span> <span id = "min">MIN : </span> <span id="sec">SEC : </span>
 
     <h4>Select year : </h4>
-    <select name="selctyear" id="selectyearId" onfocus="onselectfuinction()">
-        <option value="default"  onselect="onselectfuinction()"></option>
-        <option value="2020-2021" onselect="onselectfuinction()">2020-2021</option>
-        <option value="2021-2022" onselect="onselectfuinction()">2021-2022</option>
+    <select name="selctyear" id="selectyearId"  onchange="onselectfuinction()" >
+        <option value="default"    >Default</option>
+        <option value="2020-2021"    >2020-2021</option>
+        <option value="2021-2022"   >2021-2022</option>
     </select>
 
     <p id="selectedYearValue">Selected Year is : </p>
